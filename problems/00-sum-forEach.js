@@ -10,11 +10,19 @@ console.log(sumForEach([4, 3, -1, 10])); // 16
 console.log(sumForEach([6, 7, 2])); // 15
 console.log(sumForEach([])); // 0
 */
-
+// using for each to loop through each number
+// each number is going to add to the sum
+// return sum aka total  of each number
 let sumForEach = function(arr) {
-  // Your code here
+  let sum = 0;
+  arr.forEach(function(number){
+    sum += number;
+  })
+  return sum;
 };
-
+console.log(sumForEach([4, 3, -1, 10])); // 16
+console.log(sumForEach([6, 7, 2])); // 15
+console.log(sumForEach([])); // 0
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
