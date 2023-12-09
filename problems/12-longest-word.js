@@ -16,10 +16,27 @@ console.log(longestWord('')); // ''
 */
 
 let longestWord = function(sentence) {
-    // Your code here 
-};
+    let words = sentence.split(" ");
+    let max = 0;
+    let maxWord 
+     if (sentence.length === 0){
+        return "";
+     }
+    words.forEach(function(word){
+        let length = word.length;
 
-// Your code here 
+        if (length > max){
+            max = length;
+            maxWord = word;
+        }
+
+
+    })
+    return maxWord;
+
+
+    };
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
